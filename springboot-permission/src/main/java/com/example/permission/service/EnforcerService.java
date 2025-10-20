@@ -26,8 +26,10 @@ public class EnforcerService {
     @PostConstruct
     public void init() {
         try {
-            String modelPath = "src/main/resources/casbin/model.conf";
-            String policyPath = "src/main/resources/casbin/policy.csv";
+            //String modelPath = "src/main/resources/casbin/model.conf";
+            String modelPath = "F:\\worker\\java-examples\\springboot-permission\\src\\main\\resources\\casbin\\model.conf";
+            //String policyPath = "src/main/resources/casbin/policy.csv";
+            String policyPath = "F:\\worker\\java-examples\\springboot-permission\\src\\main\\resources\\casbin\\policy.csv";
 
             Model model = new Model();
             model.loadModel(modelPath);
